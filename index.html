@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблица</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="table">
+      <!-- Кнопка удаления элементов по чек-боксам -->
+      <div class="table-remove">
+        <button>Удалить</button>
+      </div>
+      <!-- Шапка таблицы с названиями полей -->
+      <div class="table-header">
+        <div class="table-input-name last-name">
+          <p>Фамилия</p>
+        </div>
+        <div class="table-input-name first-name">
+          <p>Имя</p>
+        </div>
+        <div class="table-input-name second-name">
+          <p>Отчество</p>
+        </div>
+        <div class="table-input-name cource">
+          <p>Курс</p>
+        </div>
+        <div class="table-input-name group">
+          <p>Группа</p>
+        </div>
+      </div>
+      <!-- Блок таблицы с записями -->
+      <div class="table-block">
+        <!-- Запись с полями -->
+        <div class="table-input">
+          <div class="table-input-checkbox">
+            <input type="checkbox" name="delete" />
+          </div>
+          <div class="table-input-field last-name">
+            <input
+              type="text"
+              name="last-name"
+              value="Колтаков"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field first-name">
+            <input
+              type="text"
+              name="first-name"
+              value="Илья"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field second-name">
+            <input
+              type="text"
+              name="second-name"
+              value="Павлович"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field cource">
+            <input type="text" name="cource" value="3" required disabled />
+          </div>
+          <div class="table-input-field group">
+            <input type="text" name="group" value="12" required disabled />
+          </div>          
+        </div>
+        <!-- Запись с полями -->
+        <div class="table-input">
+          <div class="table-input-checkbox">
+            <input type="checkbox" name="delete" />
+          </div>
+          <div class="table-input-field last-name">
+            <input
+              type="text"
+              name="last-name"
+              value="Сухоруков"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field first-name">
+            <input
+              type="text"
+              name="first-name"
+              value="Егор"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field second-name">
+            <input
+              type="text"
+              name="second-name"
+              value="Михайлович"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field cource">
+            <input type="text" name="cource" value="3" required disabled />
+          </div>
+          <div class="table-input-field group">
+            <input type="text" name="group" value="12" required disabled />
+          </div>
+        </div>
+        <!-- Запись с полями -->
+        <div class="table-input">
+          <div class="table-input-checkbox">
+            <input type="checkbox" name="delete" />
+          </div>
+          <div class="table-input-field last-name">
+            <input
+              type="text"
+              name="last-name"
+              value="Сакович"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field first-name">
+            <input
+              type="text"
+              name="first-name"
+              value="Анастасия"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field second-name">
+            <input
+              type="text"
+              name="second-name"
+              value="Валерьевна"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field cource">
+            <input type="text" name="cource" value="3" required disabled />
+          </div>
+          <div class="table-input-field group">
+            <input type="text" name="group" value="12" required disabled />
+          </div>
+        </div>
+        <!-- Запись с полями -->
+        <div class="table-input">
+          <div class="table-input-checkbox">
+            <input type="checkbox" name="delete" />
+          </div>
+          <div class="table-input-field last-name">
+            <input
+              type="text"
+              name="last-name"
+              value="Смирнова"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field first-name">
+            <input
+              type="text"
+              name="first-name"
+              value="Мария"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field second-name">
+            <input
+              type="text"
+              name="second-name"
+              value="Сергеевна"
+              required
+              disabled
+            />
+          </div>
+          <div class="table-input-field cource">
+            <input type="text" name="cource" value="3" required disabled />
+          </div>
+          <div class="table-input-field group">
+            <input type="text" name="group" value="12" required disabled />
+          </div>
+        </div>
+      </div>
+      <!-- Поля для добавления новой записи -->
+      <div class="table-input add">
+        <div class="table-input-field last-name">
+          <input type="text" name="last-name" value="" required />
+        </div>
+        <div class="table-input-field first-name">
+          <input type="text" name="first-name" value="" required />
+        </div>
+        <div class="table-input-field second-name">
+          <input type="text" name="second-name" value="" required />
+        </div>
+        <div class="table-input-field cource">
+          <input type="text" name="cource" value="" required />
+        </div>
+        <div class="table-input-field group">
+          <input type="text" name="group" value="" required />
+        </div>
+        <div class="table-input-add">
+          <button>Добавить</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

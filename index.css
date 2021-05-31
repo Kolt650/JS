@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Стили самой таблицы */
+.table {
+  position: relative;
+  width: 80%;
+  margin: 160px auto;
+}
+
+/* Стили шапки таблицы */
+.table-header {
+  padding-left: 20px;
+  padding-right: 180px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Стили элемента шапки */
+.table-input-name {
+  width: 20%;
+  font-size: 20px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #818181;
+}
+
+/* Стили записи и полей */
+.table-input {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-right:100px;
+}
+
+.table-input-checkbox {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.table-input-field {
+  width: 18%;
+  display: flex;
+  justify-content: center;
+}
+
+.table-input-field input {
+  width: 95%;
+  height: 100%;
+  border: 1px solid #979797;
+  outline: none;
+  background: #fff;
+  text-align: center;
+  font-size: 16px;
+  color: #3b3b3b;
+}
+
+.table-input-field input:disabled {
+  border: none;
+}
+
+/* Стили полей для добавления записи */
+.add {
+  padding-left: 10px;
+}
+
+.table-input-add {
+  width: 180px;
+}
+
+.table-input-add button {
+  width: 100%;
+  padding: 6px 10px;
+  outline: none;
+  border: 1px solid #979797;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.table-input-add button:hover {
+  border: 1px solid #4325ee;
+  color: #4325ee;
+}
+
+.add .table-input-field input {
+  width: 95%;
+  height: 100%;
+  border: 1px solid #979797;
+}
+
+/* Стили кнопки удаления */
+.table-remove {
+  position: absolute;
+  width: 180px;
+  left: 0;
+  bottom: calc(100% + 20px);
+}
+
+.table-remove button {
+  width: 100%;
+  padding: 6px 10px;
+  outline: none;
+  border: 1px solid #979797;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.table-remove button:hover {
+  border: 1px solid #ca1b0e;
+  color: #ca1b0e;
+}
